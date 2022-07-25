@@ -5,20 +5,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro Usuario</title>
+    <title>Seu login</title>
     <link rel="icon" type="image/x-icon" href="./img/GLStudio.png" />
     <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="/css/style2.css">
-
 </head>
 
-<body>
+<body id="login">
+
     <header class=" masthead bg-primary text-white text-center">
         <div class="container d-flex align-items-center flex-column">
 
-            <h1> Usuário Cadastrado com Sucesso!!</h1>
+            <h1>Faça seu login!</h1>
+            <form action="/listausuario" method="get">
+                <label>Email</label>
+                <input type="text" name="email"><br><br>
+                <label>senha</label>
+                <input type="text" name="senha"><br><br>
+                <button type="sumbit">Entrar</button>
+            </form>
+            <form action="/cadastrar" method="get">
+                <button type="sumbit">Cadastrar</button>
+            </form>
 
         </div>
     </header>
